@@ -87,6 +87,68 @@ margin-top: 20px;
     background-color: #f2f2f2;
    }
 
+.model{
+  display: block; 
+  position: fixed;
+  z-index:1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(120, 120, 120, 0.806);
+  overflow: auto;
+  
+ }
+ .model-content{
+  background-color: #f2f2f2;
+  margin: 20% auto;
+  width: 50%;
+  margin-top: 10%;
+  border-radius: 10px;
+ 
+  
+
+ }
+ h2{
+ text-align: left;
+ padding-left: 20px;
+ padding-top: 20px;
+ font-weight: 500;
+ 
+ }
+ .close{
+  float: right;
+  font-size: 30px;
+  padding-right: 20px;
+  margin:-5px;
+  font-weight: 900px;
+  color: black;
+}
+.close:hover{
+  cursor: pointer;
+  color: gray;
+}
+
+.inputgroup label,
+.inputgroup input{
+  display: block;
+ text-align: left;
+ width: 100%;
+ font-size: 18px;
+ 
+
+}
+.inputgroup{
+  margin: 20px ;
+  
+}
+.inputgroup button{
+  margin: 20px;
+  width: 80px;
+  
+}
+
+
    @media screen and (max-width:600px){
 
     h3{
