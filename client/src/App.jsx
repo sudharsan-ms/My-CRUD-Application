@@ -10,7 +10,7 @@ function App() {
   const [userData, setuserData] = useState({name:"",age:"",city:""})
 
 const getalluser = async () => {
-  await axios.get("http://localhost:8000/users").then
+  await axios.get("https://my-crud-application-1.onrender.com/users").then
   ((res) => {
   setusers(res.data);
   setfilterUsers(res.data)
@@ -37,7 +37,7 @@ setfilterUsers(filtereduser);
 
 //deleting function
 const handleDelete = async(id) =>{
-  await axios.delete(`http://localhost:8000/users/${id}`)
+  await axios.delete(`https://my-crud-application-1.onrender.com/users/${id}`)
   .then((res)=>{
     setusers(res.data);
     setfilterUsers(res.data)
@@ -76,13 +76,13 @@ const handleSubmit = async (e) => {
  
   e.preventDefault();
   if(userData.id)
-    {await axios.patch(`http://localhost:8000/users/${userData.id}`, userData).then
-    ((res)=>{console.log(res);
-  });
-}
+    {await axios.patch(`https://my-crud-application-1.onrender.com/users/${userData.id}`, userData).then
+    ((res)=>{console.log(res)});
+    }
+
 
 else{
-  await axios.post("http://localhost:8000/users",userData).then((res)=>{
+  await axios.post("https://my-crud-application-1.onrender.com/users",userData).then((res)=>{
 console.log(res);
 });
 
